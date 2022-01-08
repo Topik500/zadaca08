@@ -3,6 +3,7 @@ import React from 'react';
 export default function User({ name, years, onNameChange }) {
   return (
     <div>
+      <li>
       <p>
         Pozdrav, moje ime je {name} i imam {years} godina.
       </p>
@@ -12,6 +13,8 @@ export default function User({ name, years, onNameChange }) {
         value={name}
         disabled={!onNameChange}
       />
+      </li> 
+      
     </div>
   );
 }

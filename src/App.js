@@ -50,9 +50,9 @@ export default class App extends React.Component {
         <p>Ovo zbilja radi</p>
         <button onClick={this.handleButtonPress}>Promjena godina</button>
         <ul>
-          <li><User name={users[0].name} years={users[0].years} onNameChange={this.handleNameChange1}/></li>
-          <li><User name={users[1].name} years={users[1].years} onNameChange={this.handleNameChange2}/></li>
-          <li><User name={users[2].name} years={users[2].years} onNameChange={this.handleNameChange3}/></li>
+          <User name={users[0].name} years={users[0].years} onNameChange={this.handleNameChange1}/>
+          <User name={users[1].name} years={users[1].years} onNameChange={this.handleNameChange2}/>
+          <User name={users[2].name} years={users[2].years} onNameChange={this.handleNameChange3}/>
         </ul>
 
       </div>
